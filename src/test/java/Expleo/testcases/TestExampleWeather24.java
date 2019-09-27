@@ -1,6 +1,8 @@
 package Expleo.testcases;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
+import Expleo.pageobjects.Accuweather;
 import org.junit.*;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
@@ -43,5 +45,11 @@ public class TestExampleWeather24 {
         Thread.sleep(3000);
         System.out.println("Current Page URL is : " + driver.getCurrentUrl());
         System.out.println("City name is " + driver.findElement(By.xpath("//*[@id=\"cityInfo\"]/h1")).getText());
-    }
+        driver.findElement(By.xpath("//*[@id=\"ext-gen32\"]")).click();
+        Thread.sleep(3000);
+
+
+        String Day1MaxTemp = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[3]/td[1]")).getText();
+
+   }
 }
