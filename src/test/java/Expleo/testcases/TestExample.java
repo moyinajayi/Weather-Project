@@ -50,7 +50,18 @@ public class TestExample {
 
             WebElement currentdayMaxtemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[1]/div[2]/span[1]"));
             System.out.println("The maximum temperature for today is :" + currentdayMaxtemp.getText());
-            WebElement currentdayMintemp = driver.findElement(By.xpath(""));
+            WebElement currentdayMintemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[1]/div[2]/span[2]"));
+            System.out.println("The  minimum temperature for today is : "+ currentdayMintemp.getText());
+
+            WebElement nextdayMaxtemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[2]/div[2]/span[1]"));
+            System.out.println("The maximum temperature for the next day is :" + nextdayMaxtemp.getText());
+            WebElement nextdayMintemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[2]/div[2]/span[2]"));
+            System.out.println("The maximum temperature for the next day is :" + nextdayMintemp.getText());
+
+            WebElement next2daysMaxtemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[3]/div[2]/span[1]"));
+            System.out.println("The maximum temperature in the next 2 days is :" + next2daysMaxtemp.getText());
+            WebElement next2daysMintemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[3]/div[2]/span[2]"));
+            System.out.println("The  minimum temperature in the next 2 days is: "+ next2daysMintemp.getText());
 
         }
 

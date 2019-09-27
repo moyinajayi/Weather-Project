@@ -4,41 +4,39 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class Accuweather {
-    private WebElement minTemp;
-    private WebElement maxTemp;
+    private int[] minTemp = new int[5];
+    private int[] maxTemp = new int [5];
+
     private WebElement Days;
     private WebElement Title;
 
 
     @FindBy(how = How.XPATH, using = ".//html/body/div/div[1]/div[2]/div[1]/form/input")
     private WebElement Search;
-    @FindBy(how = How.XPATH, using = ".//html/body/div/div[1]/div[2]/div[2]/div[2]")
-    private WebElement City;
 
     public void setSearch(String text){
         Search.click();
-        Search.clear();
         Search.sendKeys(text);
     }
-    public void selectDay(String text){
-        Days.clear();
-        Days.sendKeys(text);
+    public void selectDay(){
+        Days.click();
+    }
+    public void getTitle(String title){
+        System.out.println(title);
     }
 
-    public void getMinTemp(String text){
-        minTemp.clear();
-        minTemp.sendKeys(text);
+
+
+    public void getMaxTemp(){
+        for(int i=0; i<5; i++){
+            System.out.println("Accuweather Day" + (i+1) + ": Maximum Temperature: " + maxTemp[i]);
+        }
     }
 
-    public void getMaxTemp(String text){
-        maxTemp.clear();
-        maxTemp.sendKeys(text);
+    public void getMinTemp() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Accuweather Day" + (i + 1) + ": Minimum Temperature:" + minTemp[i]);
+        }
 
-    }
-    public void printCityname(){
-        City.getTagName();
-    }
-    public void printCityTemp(){
-        City.getLocation();
     }
 }
