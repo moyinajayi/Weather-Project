@@ -49,7 +49,25 @@ public class TestExampleWeather24 {
         Thread.sleep(3000);
 
 
-        String Day1MaxTemp = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[3]/td[1]")).getText();
+        String Day1MaxTemp = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[3]/td[4]")).getText();
+        String Day1MinTemp = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[3]/td[5]")).getText();
+        System.out.println("Todays Maximum Temperature in Durban is  : " + Day1MaxTemp);
+        System.out.println( "Today's Minimum Temperature in Durban is " + Day1MinTemp);
+
+        String Day2MaxTemp = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[4]/td[4]")).getText();
+        String Day2MinTemp= driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[4]/td[5]")).getText();
+        System.out.println("Tomorrows Maximum Temperature in Durban is  :" + Day2MaxTemp);
+        System.out.println("Tomorrows Minimum Temperature in Durban is  :" + Day2MinTemp);
+
+        String Day3MaxTemp = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[5]/td[4]")).getText();
+        String Day3MinTemp = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[5]/td[5]")).getText();
+        System.out.println("Maximum Temperature in Durban in two days is  :" + Day3MaxTemp);
+        System.out.println("Minimum Temperature in Durban in two days is  :" + Day3MinTemp);
+
+        String Day4MaxTemp = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[6]/td[4]")).getText();
+        String Day4MinTemp = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[6]/td[5]")).getText();
+        System.out.println("Maximum Temperature in Durban in three days is  :" + Day4MaxTemp);
+        System.out.println("Minimum Temperature in Durban in three days is  :" + Day4MinTemp);
 
    }
 }
