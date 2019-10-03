@@ -61,11 +61,9 @@ public class TestExampleWeather24 {
         max24[4] = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[7]/td[4]")).getText();
         min24[4] = driver.findElement(By.xpath("//*[@id=\"forecastContent\"]/table/tbody/tr[7]/td[5]")).getText();
 
+        System.out.println("Day\t\t\tMaximum\t\tMinimum");
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Day" + (i + 1) + "\t\t " + max24[i] +"\t\t" +min24[i]);
+        }
 
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Weather day" + (i + 1) + ": Maximum Temperature: " + max24[i]);
-        }
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Weather Day" + (i + 1) + ": Minimum Temperature:" + min24[i]);
-        }
     }}
