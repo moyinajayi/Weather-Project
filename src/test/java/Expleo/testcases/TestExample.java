@@ -2,12 +2,16 @@ package Expleo.testcases;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
+import Expleo.pageobjects.Accuweather;
+import Expleo.pageobjects.Weather24;
 import org.junit.*;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,50 +22,53 @@ public class TestExample {
         private boolean acceptNextAlert = true;
         private StringBuffer verificationErrors = new StringBuffer();
 
+
         @Before
         public void setUp() throws Exception {
             System.setProperty("webdriver.chrome.driver","C:\\Drivers\\chromedriver.exe" );
             driver = new ChromeDriver();
             baseUrl = "https://www.accuweather.com/";
-            driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+            driver.manage().timeouts().pageLoadTimeout(180, TimeUnit.SECONDS);
         }
+
 
         @Test
         public void testAccuweatherSearch() throws Exception {
             driver.get(baseUrl);
-            Thread.sleep(3000);
-            System.out.println(baseUrl);
-            WebElement query = driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[1]/form/input"));
-            query.click();
-            query.sendKeys("Durban");
-            query.sendKeys(Keys.RETURN);
-            WebDriverWait wait=new WebDriverWait(driver, 10);
-            String currentURL = driver.getCurrentUrl();
-            System.out.println(currentURL);
-
-            WebElement durbanlisting = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div[1]/div[1]/a[1]"));
-            durbanlisting.click();
-            System.out.println(driver.getTitle());
-            WebElement Today = driver.findElement(By.xpath("/html/body/div/div[4]/div/div/div[3]/a[4]/span"));
-            Today.click();
-            Thread.sleep(3000);
-            System.out.println(driver.getCurrentUrl());
+            //    WebDriverWait wait=new WebDriverWait(driver, 10);
             System.out.println("Current Page title is : " + driver.getTitle());
+            Accuweather citySearch = PageFactory.initElements(driver, Accuweather.class);
 
-            WebElement currentdayMaxtemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[1]/div[2]/span[1]"));
-            System.out.println("The maximum temperature for today is :" + currentdayMaxtemp.getText());
-            WebElement currentdayMintemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[1]/div[2]/span[2]"));
-            System.out.println("The  minimum temperature for today is : "+ currentdayMintemp.getText());
+            citySearch.setSearch("durban");
+            Thread.sleep(2000);
+            citySearch.selectDay();
+            Thread.sleep(2000);
+            citySearch.specifyDay();
+            Thread.sleep(2000);
 
-            WebElement nextdayMaxtemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[2]/div[2]/span[1]"));
-            System.out.println("The maximum temperature for the next day is :" + nextdayMaxtemp.getText());
-            WebElement nextdayMintemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[2]/div[2]/span[2]"));
-            System.out.println("The maximum temperature for the next day is :" + nextdayMintemp.getText());
 
-            WebElement next2daysMaxtemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[3]/div[2]/span[1]"));
-            System.out.println("The maximum temperature in the next 2 days is :" + next2daysMaxtemp.getText());
-            WebElement next2daysMintemp = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[3]/div[2]/span[2]"));
-            System.out.println("The  minimum temperature in the next 2 days is: "+ next2daysMintemp.getText());
+            String[] maxAccu = new String[5];
+            String[] minAccu = new String[5];
+
+            maxAccu[0] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[1]/div[2]/span[1]")).getText();
+            minAccu[0] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[1]/div[2]/span[2]")).getText().substring(2);
+
+            maxAccu[1] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[2]/div[2]/span[1]")).getText();
+            minAccu[1] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[2]/div[2]/span[2]")).getText().substring(2);
+
+            maxAccu[2] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[3]/div[2]/span[1]")).getText();
+            minAccu[2] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[3]/div[2]/span[2]")).getText().substring(2);
+
+            maxAccu[3] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[4]/div[2]/span[1]")).getText();
+            minAccu[3] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[4]/div[2]/span[2]")).getText().substring(2);
+
+            maxAccu[4] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[5]/div[2]/span[1]")).getText();
+            minAccu[4] = driver.findElement(By.xpath("/html/body/div/div[5]/div/div[1]/div/div[1]/a[5]/div[2]/span[2]")).getText().substring(2);
+
+            System.out.println(" Day\t\tMaxTemp\t\tMinTemp");
+            for (int i = 0; i < 5; i++) {
+                System.out.println("Day " + (i + 1) +"\t\t" +maxAccu[i] + "\t\t\t" + minAccu[i]);
+            }
 
         }
 

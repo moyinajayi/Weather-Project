@@ -7,41 +7,34 @@ import org.openqa.selenium.support.How;
 
 public class Weather24 {
     private WebDriver driver;
-
     private int[] minTemp = new int[5];
     private int[] maxTemp = new int [5];
 
+    @FindBy(how = How.XPATH, using = "//*[@id=\"ext-gen32\"]")
     private WebElement Days;
-    private WebElement Title;
 
+    @FindBy(how = How.XPATH, using = "//*[@id=\"ctl00_WeatherContentHolder_ddlCity\"]")
+    private static WebElement SearchCity;
 
-    @FindBy(how = How.XPATH, using = "\"//*[@id=\\\"ctl00_WeatherContentHolder_btnGo\\\"]\"")
-    private WebElement SearchCity;
+    @FindBy(how = How.XPATH, using = "//*[@id='ctl00_WeatherContentHolder_ddlCity']/option[19]")
+            private WebElement selectCity;
 
-    public void setSearch(String text){
-        SearchCity.click();
-        SearchCity.sendKeys(text);
-    }
+    @FindBy(how= How.XPATH, using = "//*[@id=\"ctl00_WeatherContentHolder_btnGo\"]" )
+        private WebElement goButton;
+
+    public void setSearch(){  SearchCity.click(); }
+     public void setCity(){   selectCity.click(); }
+
+     public void submitSearch(){ goButton.click(); }
+
     public void selectDay(){
         Days.click();
     }
     public void getTitle(String title){
+        title = driver.getTitle();
         System.out.println(title);
     }
 
 
-
-    public void getMaxTemp(){
-        for(int i=0; i<5; i++){
-            System.out.println("Accuweather Day" + (i+1) + ": Maximum Temperature: " + maxTemp[i]);
-        }
-    }
-
-    public void getMinTemp() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Accuweather Day" + (i + 1) + ": Minimum Temperature:" + minTemp[i]);
-        }
-
-    }
 }
 
