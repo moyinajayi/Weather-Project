@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab8f9bde-1d16-4f6a-8732-2f81ed6caae8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Expleo/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Expleo/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Accuweather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Weather24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExampleWeather24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Expleo/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Expleo/AppTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Expleo/pageobjects/Accuweather.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Expleo/pageobjects/Weather24.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Expleo/testcases/TestExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Expleo/testcases/TestExampleWeather24.class" afterDir="false" />
+    <list default="true" id="ab8f9bde-1d16-4f6a-8732-2f81ed6caae8" name="Default Changelist" comment="5th commit on 3rd october">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Expleo/pageobjects/Accuweather.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Expleo/pageobjects/Accuweather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Expleo/pageobjects/Weather24.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Expleo/pageobjects/Weather24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Expleo/testcases/TestExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Expleo/testcases/TestExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Expleo/testcases/TestExampleWeather24.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Expleo/testcases/TestExampleWeather24.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,16 +18,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Accuweather.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="408">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+              <folding>
+                <element signature="e#920#921#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -46,26 +46,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Weather24.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="301">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExampleWeather24.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
+            <state relative-caret-position="376">
+              <caret line="63" column="58" lean-forward="true" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,8 +73,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExampleWeather24.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Accuweather.java" />
         <option value="$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExample.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Weather24.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExampleWeather24.java" />
       </list>
     </option>
   </component>
@@ -93,10 +89,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="644" />
-    <option name="y" value="45" />
-    <option name="width" value="670" />
-    <option name="height" value="691" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -104,6 +100,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,12 +164,20 @@
               <item name="Expleo" type="462c0819:PsiDirectoryNode" />
               <item name="pageobjects" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Weather-Project-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Weather-Project-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Expleo" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,7 +228,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestExampleWeather24.testWeather24search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestExampleWeather24.testWeather24search" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Project201909" />
       <extension name="coverage">
         <pattern>
@@ -239,11 +244,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestExample.testAccuweatherSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project201909" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Expleo.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Expleo.testcases" />
+      <option name="MAIN_CLASS_NAME" value="Expleo.testcases.TestExample" />
+      <option name="METHOD_NAME" value="testAccuweatherSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestExampleWeather24.testWeather24search" />
         <item itemvalue="JUnit.TestExampleWeather24" />
         <item itemvalue="JUnit.TestExample" />
+        <item itemvalue="JUnit.TestExample.testAccuweatherSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -258,61 +279,84 @@
       <option name="presentableId" value="Default" />
       <updated>1569838945165</updated>
     </task>
+    <task id="LOCAL-00001" summary="4th commit on 1st october">
+      <created>1569916510051</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569916510051</updated>
+    </task>
+    <task id="LOCAL-00002" summary="5th commit on 3rd october">
+      <created>1570089246687</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570089246687</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update to Weather 24 test">
+      <created>1570110186963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570110186963</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestExampleWeather24 - 2019.09.30 at 13h 33m 01s.xml">
-      <configuration name="TestExampleWeather24" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExampleWeather24 - 2019.09.30 at 13h 36m 32s.xml">
-      <configuration name="TestExampleWeather24" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExampleWeather24_testWeather24search - 2019.09.30 at 13h 57m 36s.xml">
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 28m 23s.xml">
       <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestExampleWeather24_testWeather24search - 2019.09.30 at 13h 58m 22s.xml">
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 30m 08s.xml">
       <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestExampleWeather24_testWeather24search - 2019.09.30 at 14h 00m 58s.xml">
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 31m 00s.xml">
       <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestExampleWeather24_testWeather24search - 2019.09.30 at 14h 04m 06s.xml">
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 31m 39s.xml">
       <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestExampleWeather24_testWeather24search - 2019.09.30 at 14h 05m 17s.xml">
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 34m 07s.xml">
       <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestExampleWeather24_testWeather24search - 2019.09.30 at 14h 40m 19s.xml">
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 35m 03s.xml">
       <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestExampleWeather24 - 2019.10.01 at 09h 31m 07s.xml">
-      <configuration name="TestExampleWeather24" configurationId="JUnit" />
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 36m 05s.xml">
+      <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.01 at 09h 38m 13s.xml">
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 38m 41s.xml">
+      <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 40m 31s.xml">
+      <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestExampleWeather24_testWeather24search - 2019.10.03 at 15h 41m 36s.xml">
       <configuration name="TestExampleWeather24.testWeather24search" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17549168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.95090014" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30114567" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32569557" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -323,24 +367,24 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1732224" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3289689" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.95090014" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30114567" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32569557" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -355,33 +399,16 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="4th commit on 1st october" />
+    <MESSAGE value="5th commit on 3rd october" />
+    <MESSAGE value="update to Weather 24 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to Weather 24 test" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Weather24.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/lang/reflect/Constructor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="499" column="24" selection-start-line="499" selection-start-column="24" selection-end-line="499" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Accuweather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExampleWeather24.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -392,10 +419,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Accuweather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="e#920#921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        <state relative-caret-position="850">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/pageobjects/Weather24.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Expleo/testcases/TestExampleWeather24.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="63" column="58" lean-forward="true" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
