@@ -69,6 +69,7 @@ public class TestExample {
             for (int i = 0; i < 5; i++) {
                 System.out.println("Day " + (i + 1) +"\t\t" +maxAccu[i] + "\t\t\t" + minAccu[i]);
             }
+            System.out.println( "Cool");
 
         }
 

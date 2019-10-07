@@ -26,7 +26,7 @@ public class Weather24 {
      public void setCity(){   selectCity.click(); }
 
      public void submitSearch(){ goButton.click(); }
-
+// try days
     public void selectDay(){
         Days.click();
     }

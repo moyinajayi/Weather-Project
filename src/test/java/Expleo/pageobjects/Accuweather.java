@@ -18,6 +18,7 @@ public class Accuweather {
     private WebElement Weeksearch;
 
     public void setSearch(String text){
+        //try search
         Search.click();
         Search.sendKeys(text);
         Search.submit();
@@ -26,6 +27,7 @@ public class Accuweather {
     public void selectDay(){
         Days.click();
     }
+
     public void specifyDay(){
         Weeksearch.click();
         }

@@ -65,5 +65,6 @@ public class TestExampleWeather24 {
         for (int i = 0; i < 5; i++) {
             System.out.println("Day" + (i + 1) + "\t\t " + max24[i] +"\t\t" +min24[i]);
         }
+        System.out.println( "Cool");
 
     }}
